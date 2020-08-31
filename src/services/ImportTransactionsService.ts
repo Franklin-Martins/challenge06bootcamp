@@ -50,7 +50,7 @@ class ImportTransactionsService {
       );
       insertedTransactions.push(transaction);
     }
-    //await fs.promises.unlink(filename)
+    await fs.promises.unlink(csvFilePath)
 
     return insertedTransactions;
   }
